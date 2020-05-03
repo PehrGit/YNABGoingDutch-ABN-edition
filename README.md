@@ -17,7 +17,7 @@ Everything is done locally. Your information never leaves your own computer.
  - Click "download".
  
 ## Other banks
-This project is a fork of [YNABGoingDutch](https://github.com/danielswrath/YNABGoingDutch). Please go to that repository if you are looking for other supported banks.
+This project is a fork of [YNABGoingDutch](https://github.com/pehrgit/YNABGoingDutch). Please go to that repository if you are looking for other supported banks.
 
 ## Just let me use it!
-The latest version of the master branch can be used on [GitHub Pages](https://ynab-abn.danielhaitink.nl). 
+The latest version of the master branch can be used on [GitHub Pages](https://pehrgit.github.io/YNABGoingDutch-ABN-edition/). 
