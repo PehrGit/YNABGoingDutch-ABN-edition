@@ -270,6 +270,14 @@ const BankMapperABN = function () {
                     payee = match[0][1].substring(13);
                     memo = match[3][1];
                 }
+            } else if (field.startsWith("DIVIDEND")) {
+                // Extract details of "Herbelegging" order
+                const match = Array.from(field.matchAll(/(.+?)(?:\s{2,}|$|\sFONDSCODE)/g));
+                //    0 is name of fund, 2 + 3 is dividend details
+                if (match.length >= 4) {
+                    payee = match[0][1];
+                    memo = match[2][1] + " " + match[3][1];
+                }
             } else {
                 //    ERROR!
             }
