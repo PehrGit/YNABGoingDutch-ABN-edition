@@ -262,6 +262,14 @@ const BankMapperABN = function () {
                     payee = match[0][1].substring(22);
                     memo = match[3][1];
                 }
+            } else if (field.startsWith("HERBELEGGING")) {
+                // Extract details of "Herbelegging" order
+                const match = Array.from(field.matchAll(/(.+?)(?:\s{2,}|$|\sFONDSCODE)/g));
+                //    0 is name of fund, 3 is order details
+                if (match.length >= 4) {
+                    payee = match[0][1].substring(13);
+                    memo = match[3][1];
+                }
             } else {
                 //    ERROR!
             }
